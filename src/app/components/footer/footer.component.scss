@@ -44,4 +44,8 @@
             color: #005AA3;
         }
     }
+
+    .section:nth-of-type(1) {
+        border-left: none;
+    }
 }

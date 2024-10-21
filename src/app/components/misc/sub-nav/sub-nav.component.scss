@@ -1,0 +1,28 @@
+.sub-nav {
+    color: #454854;
+    margin: 30px 0 30px 0;
+
+    a {
+        cursor: pointer;
+        font-size: 16px;
+        color: #005AA3;
+        text-decoration: underline;
+
+        svg {
+            margin-right: 5px;
+            position: relative;
+            bottom: -2px;
+        }
+    }
+
+    a, a:visited, a:hover, a:focus {
+        text-decoration: underline;
+        color: #005AA3;
+    }
+
+    .disabled {
+        display: inline;
+        text-decoration: none;
+        color: #454854;
+    }
+}
