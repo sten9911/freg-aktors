@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgIf, NgClass } from '@angular/common';
 
 @Component({
@@ -9,6 +9,11 @@ import { NgIf, NgClass } from '@angular/common';
   styleUrl: './function-card.component.scss'
 })
 export class FunctionCardComponent {
+
+  @Input() title = '';
+  @Input() description = '';
+  @Input() owner = '';
+  @Input() likes = 0;
 
   liked: boolean = false;
   like()  {

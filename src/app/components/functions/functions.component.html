@@ -8,13 +8,89 @@
             </div>
             <div class="main_section">
                 <div class="left">
-                    <app-search-bar></app-search-bar>
+                    <app-search-bar [width]="'312px'" [iconColor]="'black'"></app-search-bar>
+                    <div class="dropdown-filter">Liigitus<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Pakutav teenus<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Valdkondlik märksõna<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Omanik<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Programmeerimiskeel<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Operatsioonisüsteem<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">Turvameetmeid rakendatakse<img src=".././assets/arrow-down.svg"/></div>
+                    <div class="dropdown-filter">ISKE turbetase<img src=".././assets/arrow-down.svg"/></div>
                 </div>
                 <div class="right">
-                    <div class="sorting">
-                        
+                    <div class="sorting-top">
+                        <div class="left">
+                            <p>170 tulemust</p>
+                        </div>
+                        <div class="right">
+                            <div class="sorting">
+                                <p>Sorteeri</p>
+                                <div class="sort-dropdown">
+                                    <div class="dropdown-text">- Select option -</div>
+                                    <img src=".././assets/dropdown-arrow.svg"/></div>
+                            </div>
+                            <div class="page-size">
+                                <p>Kuvan korraga</p>
+                                <div class="size-dropdown">
+                                    <div class="dropdown-text">- Select option -</div>
+                                    <img src=".././assets/dropdown-arrow.svg"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <app-function-card></app-function-card>
+                    <div class="function-card" *ngFor="let function of functions | paginate: config">
+                        <app-function-card [title]="function.title" [description]="function.description" [owner]="function.owner" [likes]="function.likes"></app-function-card>
+                    </div>
+                    <div class="sorting-bottom">
+                        <div class="result-count">
+                            <p>170 tulemust</p>
+                        </div>
+
+                        <pagination-template #p="paginationApi"
+                        [id]="'custom'"
+                        (pageChange)="config.currentPage = $event">
+
+                            <div class="custom-pagination">
+                                <div class="pagination-previous" [class.disabled]="p.isFirstPage()">
+                                    <svg *ngIf="!p.isFirstPage()" (click)="p.previous()" class="arrow" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 14L8.41 12.59L3.83 8H20V6H3.83L8.42 1.41L7 0L0 7L7 14Z" fill="#005AA3"/>
+                                    </svg>
+                                    <svg *ngIf="p.isFirstPage()" (click)="p.previous()" class="arrow" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 14L8.41 12.59L3.83 8H20V6H3.83L8.42 1.41L7 0L0 7L7 14Z" fill="#C0C2C9"/>
+                                    </svg>
+                                </div>
+
+                                <div *ngFor="let page of p.pages" [class.current]="p.getCurrent() === page.value">
+                                    <a (click)="p.setCurrent(page.value)" *ngIf="p.getCurrent() !== page.value">
+                                        <span class="page">{{ page.label }}</span>
+                                    </a>
+                                    <div *ngIf="p.getCurrent() === page.value">
+                                        <span class="current page">{{ page.label }}</span>
+                                    </div>
+                                </div>
+
+                                <div class="pagination-next" [class.disabled]="p.isLastPage()">
+                                    <svg *ngIf="!p.isLastPage()" (click)="p.next()" class="arrow" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 0L11.59 1.41L16.17 6H0V8H16.17L11.58 12.59L13 14L20 7L13 0Z" fill="#005AA3"/>
+                                    </svg>
+                                    <svg *ngIf="p.isLastPage()" class="arrow" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 0L11.59 1.41L16.17 6H0V8H16.17L11.58 12.59L13 14L20 7L13 0Z" fill="#C0C2C9"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </pagination-template>
+                        
+
+                        <div class="page-size">
+                            <p>Kuvan korraga</p>
+                            <div class="size-dropdown">
+                                <div class="dropdown-text">5</div>
+                                <img src=".././assets/dropdown-arrow.svg"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

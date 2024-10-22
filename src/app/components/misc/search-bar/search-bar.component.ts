@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.scss'
 })
 export class SearchBarComponent {
+
+  @Input() width: string = '0px';
+  @Input() iconColor: string = 'blue';
+
   onSearchClick() {
     console.log('search');
   }

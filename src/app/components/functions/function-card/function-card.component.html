@@ -2,15 +2,15 @@
     <div class="likes">
         <img *ngIf="!liked" (click)="like()" src=".././assets/like-black.svg"/>
         <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
-        <p class="likecount" [ngClass]="{'liked': liked}">24</p>
+        <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
     </div>
     <div class="card">
         <div class="body">
             <img src="./../assets/Maa-ameti_logo.svg"/>
             <div class="text">
-                <div class="title">Aadressiandmete süsteem</div>
-                <div class="owner">Maa-amet</div>
-                <div class="description">Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.</div>
+                <div class="title">{{title}}</div>
+                <div class="owner">{{owner}}</div>
+                <div class="description">{{description}}</div>
             </div>     
         </div>
         <div class="info">

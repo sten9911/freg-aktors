@@ -1,6 +1,7 @@
 .card-wrapper {
     width: 792px;
     position: relative;
+    margin-bottom: 8px;
 
     .likes {
         position: absolute;
@@ -46,7 +47,7 @@
             }
 
             .text {
-                width: 90%;
+                width: 80%;
                 .title {
                     font-size: 20px;
                     color: #005AA3;
@@ -84,7 +85,7 @@
                     border: 2px solid #686B78;
                     border-radius: 4px;
                     cursor: pointer;
-                    margin-left: 8px;
+                    margin-right: 8px;
 
                     img {
                         margin-right: 4px;
