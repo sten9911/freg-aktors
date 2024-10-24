@@ -1,5 +1,8 @@
 .header {
     width: 100%;
+    -webkit-box-shadow: 0 6px 4px -4px black;
+    -moz-box-shadow: 0 6px 4px -4px black;
+    box-shadow: 0 6px 4px -4px black;
 
     .header-settings {
         height: 40px;
@@ -37,18 +40,48 @@
         .logo {
             height: 32px;
             margin-left: 24px;
+            margin-right: 24px;
         }
 
-        .login-button {
-            margin-right: 24px;
-            color: white;
-            background-color: #005AA3;
-            border-radius: 360px;
-            border: none;
-            width: 152px;
-            height: 40px;
-            font-size: 16px;
-            font-weight: bold;
+        .searchbar {
+            width: 360px;
+        }
+
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            .login-button {
+                margin-right: 24px;
+                color: white;
+                background-color: #005AA3;
+                border-radius: 360px;
+                border: none;
+                width: 152px;
+                height: 40px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .header-buttons-sm {
+                display: flex;
+                align-items: center;
+                .header-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    color: #005AA3;
+                    white-space: nowrap;
+                    margin: 24px;
+                    img, svg {
+                        margin-bottom: 4px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
         }
     }
     
@@ -87,6 +120,52 @@
         a, a:visited, a:hover, a:focus {
             text-decoration: none;
             color: #fff;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .header {
+        .header-buttons {
+            .login-button {
+                display: block;
+            }
+            .header-buttons-sm {
+                display: none !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .header {
+        .header-buttons {
+            .login-button {
+                display: none;
+            }
+            .header-buttons-sm {
+                display: flex;
+                .header-btn:first-child {
+                    display: none !important;
+                }
+            }
+        }
+        .header-navigation {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        .searchbar {
+            display: none;
+        }
+        .header-buttons {
+            .header-buttons-sm{
+                .header-btn:first-child {
+                    display: flex !important;
+                }
+            }
         }
     }
 }

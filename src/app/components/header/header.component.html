@@ -10,8 +10,24 @@
 
     <div class="header-main">
         <img class="logo" src=".././assets/Logo.png"/>
-        <app-search-bar [width]="'360px'"></app-search-bar>
-        <button class="login-button">Login sisse</button>
+        <app-search-bar class="searchbar"></app-search-bar>
+        <div class="header-buttons">
+            <button class="login-button">Login sisse</button>
+            <div class="header-buttons-sm">
+                <div class="header-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#005AA3" d="M5 10a5 5 0 1 1 10 0a5 5 0 0 1-10 0m5-7a7 7 0 1 0 4.192 12.606l5.1 5.101a1 1 0 0 0 1.415-1.414l-5.1-5.1A7 7 0 0 0 10 3"/></svg>
+                    <p>Otsing</p>
+                </div>
+                <div class="header-btn">
+                    <img src=".././assets/login-btn.svg"/>
+                    <p>Login sisse</p>
+                </div>
+                <div class="header-btn">
+                    <img src=".././assets/burger-btn.svg"/>
+                    <p>Menüü</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="header-navigation">

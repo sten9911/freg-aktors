@@ -10,7 +10,6 @@ import { NgIf } from '@angular/common';
 })
 export class SearchBarComponent {
 
-  @Input() width: string = '0px';
   @Input() iconColor: string = 'blue';
 
   onSearchClick() {
