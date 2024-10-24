@@ -1,8 +1,8 @@
 .header {
     width: 100%;
-    -webkit-box-shadow: 0 6px 4px -4px black;
-    -moz-box-shadow: 0 6px 4px -4px black;
-    box-shadow: 0 6px 4px -4px black;
+    -webkit-box-shadow: 0 2px 4px -4px #131317;
+    -moz-box-shadow: 0 2px 4px -4px #131317;
+    box-shadow: 0 2px 4px -4px #131317;
 
     .header-settings {
         height: 40px;
@@ -156,7 +156,15 @@
     }
 }
 @media only screen and (max-width: 600px) {
-    .header {
+    .header-settings {
+        display: none !important;
+    }
+    .header-main {
+        .logo {
+            height: 24px !important;
+            margin-left: 12px !important;
+            margin-right: 12px !important;
+        }
         .searchbar {
             display: none;
         }
@@ -164,6 +172,9 @@
             .header-buttons-sm{
                 .header-btn:first-child {
                     display: flex !important;
+                }
+                .header-btn {
+                    margin: 10px !important;
                 }
             }
         }

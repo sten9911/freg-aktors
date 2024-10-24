@@ -1,5 +1,5 @@
 <div class="card-wrapper">
-    <div class="likes">
+    <div class="likes desktop">
         <img *ngIf="!liked" (click)="like()" src=".././assets/like-black.svg"/>
         <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
         <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
@@ -18,7 +18,14 @@
                 <button><img src="./../assets/tag.svg"/>Kood</button>
                 <button><img src="./../assets/security.svg"/>Keskmine (K2T2S0)</button>
             </div>
-            <div class="details">Vaatan lähemalt<img src="./../assets/arrow-right-blue.svg"/></div>
+            <div class="right">
+                <div class="likes mobile">
+                    <img *ngIf="!liked" (click)="like()" src=".././assets/like-black.svg"/>
+                    <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
+                    <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
+                </div>
+                <div class="details">Vaatan lähemalt<img src="./../assets/arrow-right-blue.svg"/></div>
+            </div>
         </div>
     </div>
 </div>

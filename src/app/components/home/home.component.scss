@@ -5,7 +5,6 @@
 
 .functions {
     width: 100%;
-    height: 497px;
     display: flex;
     justify-content: center;
     
@@ -57,6 +56,8 @@
             p {
                 font-size: 22px;
                 margin-bottom: 25px;
+                white-space: nowrap;
+                white-space: nowrap;
             }
             button {
                 background-color: #F0F0F2;
@@ -82,11 +83,11 @@
 }
 .statistics {
     width: 100%;
-    height: 697px;
     background-color: #F0F0F2;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 70px;
 
     .statistics-container {
         display: flex;
@@ -124,8 +125,10 @@
                 font-weight: bold;
                 margin-top: 8px;
                 background-color: #FFFFFF;
-                width: 697px;
-                height: 304px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 border-radius: 4px;
                 padding: 20px;
                 box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
@@ -142,6 +145,66 @@
         
         .right {
             width: 456px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1212px) {
+    .statistics {
+        padding: 30px;
+        .statistics-container {
+            flex-direction: column;
+            width: 100%;
+            .left {
+                width: 100%;
+                margin-bottom: 24px;
+                .pie-charts {
+                    div {
+                        width: 49.5%;
+                        
+                    }
+                }
+                .line-chart {
+                    width: 100%;
+                }
+            }
+            .right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .functions {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        .left, .right {
+            width: 100%;
+            padding: 30px;
+        }
+        .right {
+            div {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .functions {
+        .right {
+            flex-direction: column;
+            div {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .statistics-container {
+        .left {
+            display: none;
         }
     }
 }

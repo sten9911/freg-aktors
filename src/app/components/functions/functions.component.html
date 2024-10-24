@@ -4,11 +4,15 @@
         <div class="functions">
             <div class="section_header">
                 <div class="title">Funktsioonide kataloog</div>
-                <div class="add_function"><img src="./../assets/blue-plus.svg"/>Lisan uue funktsiooni</div>
+                <div class="header-buttons">
+                    <div class="add_function"><img src="./../assets/blue-plus.svg"/>Lisan uue</div>
+                    <div class="filter_function"><img src="./../assets/filter-btn.svg"/>Filtrid</div>
+                </div>
+                
             </div>
             <div class="main_section">
                 <div class="left">
-                    <app-search-bar [iconColor]="'black'"></app-search-bar>
+                    <app-search-bar [iconColor]="'black'" class="searchbar"></app-search-bar>
                     <div class="dropdown-filter">Liigitus<img src=".././assets/arrow-down.svg"/></div>
                     <div class="dropdown-filter">Pakutav teenus<img src=".././assets/arrow-down.svg"/></div>
                     <div class="dropdown-filter">Valdkondlik märksõna<img src=".././assets/arrow-down.svg"/></div>
@@ -40,7 +44,7 @@
                         </div>
                     </div>
                     <div class="function-card" *ngFor="let function of functions | paginate: config">
-                        <app-function-card [title]="function.title" [description]="function.description" [owner]="function.owner" [likes]="function.likes"></app-function-card>
+                        <app-function-card class="function-card-item" [title]="function.title" [description]="function.description" [owner]="function.owner" [likes]="function.likes"></app-function-card>
                     </div>
                     <div class="sorting-bottom">
                         <div class="result-count">

@@ -108,3 +108,49 @@
         }
     }
 }
+
+@media only screen and (min-width: 870px) {
+    .mobile {
+        display: none !important;
+    } 
+}
+
+@media only screen and (max-width: 1212px) {
+    .card-wrapper {
+        width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 869px) {
+    .card-wrapper {
+        width: 100%;
+        .desktop {
+            display: none;
+        }
+        .card {
+            height: auto;
+            .body {
+                img {
+                    display: none;
+                }
+                .text {
+                    margin-bottom: 12px;
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 12px;
+                    .likes {
+                        position: unset !important;
+                    }
+                }
+            }
+        }
+    }
+}
