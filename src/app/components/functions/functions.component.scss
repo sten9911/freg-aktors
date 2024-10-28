@@ -4,6 +4,26 @@
     flex-direction: column;
     align-items: center;
     background-color: #F0F0F2;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:before {
+        opacity: 0.25;
+        background-image: url("/assets/bg-pattern.svg"), url("/assets/bg-pattern.svg");
+        background-position-x: -500px, 1050px;
+        background-position-y: -200px, -540px;
+        background-size: 1100px;
+        background-repeat: no-repeat, no-repeat;
+        width: 100vw;
+        height: 100vw;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     .functions_wrapper {
         display: flex;
@@ -60,6 +80,9 @@
 
 @media only screen and (max-width: 1212px) {
     .page_container {
+        &:before {
+            background-position-x: -500px, 750px;
+        }
         .functions-wrapper {
             width: 100%;
             padding: 0 24px 0 24px;
@@ -89,6 +112,11 @@
 }
 
 @media only screen and (max-width: 869px) {
+    .page_container {
+        &:before {
+            display: none;
+        }
+    }
     .functions {
         padding: 0px !important;
     }

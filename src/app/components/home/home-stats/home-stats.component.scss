@@ -10,6 +10,25 @@
     justify-content: center;
     align-items: center;
     padding: 70px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  
+    &:before {
+      opacity: 0.25;
+      background-image: url("/assets/bg-pattern.svg");
+      background-position: 1050px 200px;
+      background-size: 1100px;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vw;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
     .statistics-container {
         display: flex;
@@ -74,6 +93,9 @@
 @media only screen and (max-width: 1212px) {
     .statistics {
         padding: 30px;
+        &:before {
+            display: none;
+          }
         .statistics-container {
             flex-direction: column;
             width: 100%;
