@@ -1,0 +1,25 @@
+.dropdown {
+    width: 100%;
+    border: 1px solid #878A97;
+    border-radius: 4px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    .title {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0px 17px 0px 17px;
+        color: #454854;
+        cursor: pointer;
+    }
+    .content {
+        padding: 17px;
+    }
+}

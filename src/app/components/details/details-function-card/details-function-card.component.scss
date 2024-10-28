@@ -1,0 +1,170 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 32px 32px 32px;
+    margin-bottom: 32px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+.function {
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #C0C2C9;
+
+        .left {
+            height: 100%;
+            display: flex;
+            align-items: center; 
+            button {
+                display: flex;
+                align-items: center; 
+                height: 100%;
+                border: 2px solid #686B78;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 8px;
+
+                img {
+                    margin-right: 4px;
+                }
+            }
+        }
+        .right {
+            height: 100%;
+            display: flex;
+            font-size: 14px;
+
+            button {
+                font-weight: bold;
+                padding: 14px;
+                display: flex;
+                align-items: center;
+                border-radius: 36px;
+                cursor: pointer;
+                img {
+                    margin-right: 4px;
+                }
+            }
+            .follow {
+                background-color: #005AA3;
+                color: #fff;
+                border: none;
+                margin-right: 16px;
+            }
+            .edit {
+                color: #005AA3;
+                background-color: transparent;
+                border: 2px solid #005AA3;
+                margin-right: 16px;
+            }
+            .likes {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #131317;
+        
+                img {
+                    margin-right: 8px;
+                    cursor: pointer;
+                }
+                .liked {
+                    color: #005AA3;
+                }
+            }
+        }
+    }
+    
+    .body {
+        margin-top: 16px;
+        display: flex;
+        img {
+            width: 184px;
+        }
+        .text {
+            margin-left: 32px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .title {
+                font-size: 28px;
+                color: #131317;
+                margin-bottom: 4px;
+            }
+            .owner {
+                font-size: 14px;
+                margin-bottom: 16px;
+                color: #454854;
+                .owner-name {
+                    cursor: pointer;
+                    color: #005AA3;
+                    text-decoration: underline;
+                }
+                .private {
+                    color: #AC3232;
+                }
+                span {
+                    margin-right: 12px;
+                }
+            }
+            .description {
+                width: 90%;
+                font-size: 16px;
+                color: #131317;
+                margin-bottom: 16px;
+            }
+
+            .tags {
+                color: #454854;
+                font-size: 14px;
+                margin-top:  16px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                div {
+                    margin-right: 8px;
+                }
+                span {
+                    color: #131317;
+                    background-color: #EAF6FF;
+                    margin: 4px 8px 4px 0px;
+                    padding: 6px;
+                    border-radius: 4px;
+                    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card {
+        padding: 12px 0px 12px 0px;
+        margin-bottom: 16px;
+        box-shadow: unset;
+    }
+    .function {
+        .info {
+            display: none;
+        }
+        .body {
+            img {
+                display: none;
+            }
+            .text {
+                margin-left: 0px;
+                width: 100%;
+                .tags {
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

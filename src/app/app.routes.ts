@@ -4,8 +4,20 @@ import { FunctionsComponent } from './components/functions/functions.component';
 import { DetailsComponent } from './components/details/details.component';
 
 export const routes: Routes = [
-    {path: 'home', component: HomeComponent},
-    {path: 'functions/details', component: DetailsComponent},
-    {path: 'functions', component: FunctionsComponent},
-    {path: '', redirectTo:'/home', pathMatch:'full'}
-];
+    {
+      path: 'home',
+      component: HomeComponent,
+      data: { breadcrumb: 'Avaleht' }
+    },
+    {
+      path: 'functions',
+      component: FunctionsComponent,
+      data: { breadcrumb: 'Funktsioonide kataloog' }
+    },
+    {
+      path: 'functions/details',
+      component: DetailsComponent,
+      data: { breadcrumb: 'Funktsiooni detailvaade' }
+    },
+    { path: '', redirectTo: '/home', pathMatch: 'full' }
+  ];

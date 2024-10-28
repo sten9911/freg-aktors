@@ -1,0 +1,154 @@
+.functions_list {
+    .sorting-top {
+        display: flex;
+        justify-content: space-between;
+        color: #454854;
+        font-size: 14px;
+        margin-bottom: 12px;
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .sorting {
+                display: flex;
+                align-items: center;
+                margin-right: 24px;
+                .sort-dropdown {
+                    margin-left: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid #C0C2C9;
+                    border-radius: 4px;
+                    padding: 8px;
+                    width: 182px;
+                    .dropdown-text {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    img {
+                        margin-left: 12px;
+                    }
+                }
+            }
+            .page-size {
+                display: flex;
+                align-items: center;
+                .size-dropdown {
+                    margin-left: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px;
+                    border: 1px solid #C0C2C9;
+                    border-radius: 4px;
+                    width: 82px;
+                    .dropdown-text {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    img {
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sorting-bottom {
+        margin-top: 16px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #454854;
+        font-size: 14px;
+    }
+
+    .page-size {
+        display: flex;
+        align-items: center;
+            .size-dropdown {
+                margin-left: 8px;
+                display: flex;
+                justify-content: space-between;
+                padding: 8px;
+                border: 1px solid #C0C2C9;
+                border-radius: 4px;
+                width: 82px;
+                .dropdown-text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                img {
+                    margin-left: 12px;
+                }
+            }
+    }
+
+    .custom-pagination {
+        display: flex;
+        align-items: center;
+
+        .pagination-previous {
+            color: #005AA3;
+        }
+        .pagination-next {
+            color: #005AA3;
+        }
+
+        .page {
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            font-size: 14px;
+            color: #005AA3;
+            line-height: 35px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .current {
+            background-color: #005AA3;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .arrow {
+            margin: 0 12px 0 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1212px) {
+    .functions_list {
+        width: 100%;
+        .function-card {
+            .function-card-item {
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 869px) {
+    .sorting-top {
+        display: none !important;
+    }
+    .sorting-bottom {
+        display: flex;
+        flex-direction: column;
+        .custom-pagination {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}

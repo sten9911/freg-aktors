@@ -1,0 +1,18 @@
+.search-filters {
+    width: 312px;
+    margin-right: 24px;
+    .searchbar {
+        display: block;
+        width: 107%;
+    }
+    .dropdown-filter {
+        display: block;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 1212px) {
+    .search-filters {
+        display: none;
+    }
+}

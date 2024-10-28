@@ -1,0 +1,195 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 32px 32px 32px;
+    margin-bottom: 32px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+.usecases {
+    padding: 32px;
+    .top {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        h1 {
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .add_usecase {
+            font-size: 14px;
+            color: #005AA3;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #005AA3;
+            padding: 8px 20px 8px 20px;
+            border-radius: 36px;
+            cursor: pointer;
+            img {
+                margin-right: 4px;
+            }
+        }  
+    }
+    .usecase-table-mobile {
+        display: none;
+        .sorting-bottom {
+            margin-top: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #454854;
+            font-size: 14px;
+        }
+
+        .page-size {
+            display: flex;
+            align-items: center;
+                .size-dropdown {
+                    margin-left: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px;
+                    border: 1px solid #C0C2C9;
+                    border-radius: 4px;
+                    width: 82px;
+                    .dropdown-text {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    img {
+                        margin-left: 12px;
+                    }
+                }
+        }
+        .pagination-template {
+            width: 100%;
+        }
+        .custom-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .pagination-previous {
+                color: #005AA3;
+            }
+            .pagination-next {
+                color: #005AA3;
+            }
+
+            .page {
+                display: inline-block;
+                height: 35px;
+                width: 35px;
+                font-size: 14px;
+                color: #005AA3;
+                line-height: 35px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .current {
+                background-color: #005AA3;
+                color: white;
+                border-radius: 50%;
+            }
+
+            .arrow {
+                margin: 0 12px 0 12px;
+                cursor: pointer;
+            }
+        }
+    }
+    .usecase-table-desktop {
+        .table-results {
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: #454854;
+            border: 1px solid #C0C2C9;
+            border-radius: 0px 0px 4px 4px;
+            font-size: 14px;
+            .page-size {
+                display: flex;
+                align-items: center;
+                .size-dropdown {
+                    margin-left: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px;
+                    border: 1px solid #C0C2C9;
+                    border-radius: 4px;
+                    width: 82px;
+                    .dropdown-text {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    img {
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .desktop {
+       display: none !important;
+    }
+}
+
+@media only screen and (max-width: 807px) {
+    table {
+        th, td {
+            padding-right: 8px !important;
+        }
+    }
+    .usecase-table-desktop {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card {
+        padding: 12px 0px 12px 0px;
+        margin-bottom: 16px;
+        box-shadow: unset;
+    }
+    .usecases {
+        .usecase-table-mobile {
+            width: 100%;
+            display: block;
+        }
+        .usecase-table-desktop {
+            display: none;
+        }
+        .top {
+            flex-direction: column;
+            align-items: flex-start;
+            .add_usecase {
+                margin: 16px 0 16px 0;
+                padding: 6px 20px 6px 20px;
+            }
+        }
+    }
+    .desktop-table {
+        display: none !important;
+    }
+    .sorting-bottom {
+        display: flex;
+        flex-direction: column;
+        .custom-pagination {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<app-header-menu *ngIf="menuOpen" (close)="toggleMenu()"></app-header-menu>
+
+<div class="header-main">
+    <a href="/home"><img class="logo" src=".././assets/Logo.png"/></a>
+    <app-search-bar class="searchbar"></app-search-bar>
+    <div class="header-buttons">
+        <button *ngIf="!loggedIn" class="login-button" (click)="login()">Login sisse</button>
+        <div *ngIf="loggedIn" class="logged-user">
+            <p>Sisselogitud</p>
+            <div class="user">Kairi Sarapuu <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.59 0.294983L6 4.87498L1.41 0.294983L0 1.70498L6 7.70498L12 1.70498L10.59 0.294983Z" fill="#005AA3"/>
+                </svg>
+                </div>
+        </div>
+        <div class="header-buttons-sm">
+            <div class="header-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#005AA3" d="M5 10a5 5 0 1 1 10 0a5 5 0 0 1-10 0m5-7a7 7 0 1 0 4.192 12.606l5.1 5.101a1 1 0 0 0 1.415-1.414l-5.1-5.1A7 7 0 0 0 10 3"/></svg>
+                <p>Otsing</p>
+            </div>
+            <div *ngIf="!loggedIn" class="header-btn" (click)="login()">
+                <img src=".././assets/login-btn.svg"/>
+                <p>Login sisse</p>
+            </div>
+            <div class="header-btn" (click)="toggleMenu()">
+                <img src=".././assets/burger-btn.svg"/>
+                <p>Menüü</p>
+            </div>
+        </div>
+    </div>
+</div>

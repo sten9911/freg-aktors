@@ -5,7 +5,7 @@
     --handle-border: 2px solid #686B78;
     --track-border: 2px solid #878A97;
     --tracker-background: white;
-    --handle-size: 10px;
+    --handle-size: 9px;
   
 
     .toggle-btn-handle {
@@ -49,7 +49,7 @@
     pointer-events: none;
     border-radius: 16px;
     transition: background-color 0.16s ease 0s;
-    background: var(--tracker-backgroundd);
+    background: var(--tracker-background);
     box-sizing: border-box;
     border: var(--track-border);
 }

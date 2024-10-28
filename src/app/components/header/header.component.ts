@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-import { SearchBarComponent } from '../misc/search-bar/search-bar.component';
-import { ToggleButtonComponent } from '../misc/toggle-button/toggle-button.component';
+import { HeaderSettingsComponent } from './header-settings/header-settings.component';
+import { HeaderMainComponent } from './header-main/header-main.component';
+import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, ToggleButtonComponent, SearchBarComponent],
+  imports: [HeaderSettingsComponent, HeaderMainComponent, HeaderNavigationComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  darkmodeValue: boolean = false;
+
 }

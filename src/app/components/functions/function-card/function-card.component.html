@@ -24,7 +24,7 @@
                     <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
                     <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
                 </div>
-                <div class="details">Vaatan lähemalt<img src="./../assets/arrow-right-blue.svg"/></div>
+                <div class="details" routerLink="details"><a>Vaatan lähemalt</a><img src="./../assets/arrow-right-blue.svg"/></div>
             </div>
         </div>
     </div>

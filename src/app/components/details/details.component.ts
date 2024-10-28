@@ -1,45 +1,17 @@
 import { Component } from '@angular/core';
-import { SubNavComponent } from '../misc/sub-nav/sub-nav.component';
-import { NgIf, NgClass, NgFor } from '@angular/common';
-import { TableComponent } from '../misc/table/table.component';
-import { NgxPaginationModule, PaginationInstance } from 'ngx-pagination';
+import { DetailsFunctionCardComponent } from './details-function-card/details-function-card.component';
+import { DetailsIntroTechnicalComponent } from './details-intro-technical/details-intro-technical.component';
+import { DetailsContactsComponent } from './details-contacts/details-contacts.component';
+import { DetailsFaqComponent } from './details-faq/details-faq.component';
+import { DetailsUsecasesComponent } from './details-usecases/details-usecases.component';
+import { BreadcrumbsComponent } from '../misc/breadcrumbs/breadcrumbs.component';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [SubNavComponent, NgIf, NgFor, NgClass, TableComponent, NgxPaginationModule],
+  imports: [DetailsFunctionCardComponent, DetailsIntroTechnicalComponent, DetailsContactsComponent, DetailsFaqComponent, DetailsUsecasesComponent, BreadcrumbsComponent],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
 })
 export class DetailsComponent {
-
-  public config: PaginationInstance = {
-    id: "custom",
-    itemsPerPage: 2,
-    currentPage: 1
-  };  
-
-  usecaseHeaders = [
-    {'name': "", 'sortable': false, 'alwaysSortable': false}, 
-    {'name': "Nimetus", 'sortable': true, 'alwaysSortable': true}, 
-    {'name': "Projekti nimetus", 'sortable': true, 'alwaysSortable': false},
-    {'name': "Kasutusele võetud", 'sortable': true, 'alwaysSortable': false},
-    {'name': "Kasutab", 'sortable': true, 'alwaysSortable': false},
-  ];
-  usecaseData= [
-    ['img:.././assets/users-table-pic.svg', 'IN-ADS aadressiandmed ehitusregistris', 'Ehitusregister', '05.09.2022', 'MKM'], 
-    ['img:.././assets/users-table-pic.svg', '	Lorem ipsum dolor sit amet consectetur ipsum dolor sit ipsum dolor sit amet consectetur.', 'Lorem ipsum dolor', '23.09.2021', 'RIA']
-  ]
-
-  likes: number = 0;
-  liked: boolean = false;
-
-  // Controls which tab is open
-  selectedTab: 'desc' | 'tech' = 'desc';
-
-  like()  {
-    
-    this.liked = !this.liked;
-  }
-
 }

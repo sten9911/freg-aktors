@@ -1,0 +1,6 @@
+<div class="dropdown">
+    <div class="title" (click)="toggle()">{{title}}<img src=".././assets/arrow-down.svg"/></div>
+    <div class="content" *ngIf="contentOpen">
+        <ng-content></ng-content>
+    </div>
+</div>
