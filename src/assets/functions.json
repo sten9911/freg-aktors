@@ -1,304 +1,404 @@
 {
     "functions": [
         {
+            "id": 1,
             "title": "Aadressiandmete süsteem",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 24
+            "likes": 24,
+            "liked": true
         },
         {
+            "id": 2,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 56
+            "likes": 56,
+            "liked": false
         },
         {
+            "id": 3,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 0
+            "likes": 0,
+            "liked": false
         },
         {
+            "id": 4,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 5
+            "likes": 5,
+            "liked": false
         },
         {
+            "id": 5,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 3
+            "likes": 3,
+            "liked": false
         },
         {
+            "id": 6,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 45
+            "likes": 45,
+            "liked": false
         },
         {
+            "id": 7,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 67
+            "likes": 67,
+            "liked": false
         },
         {
+            "id": 8,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 78
+            "likes": 78,
+            "liked": false
         },
         {
+            "id": 9,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 56
+            "likes": 56,
+            "liked": false
         },
         {
+            "id": 10,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 1
+            "likes": 1,
+            "liked": false
         },
         {
+            "id": 11,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 100
+            "likes": 100,
+            "liked": false
         },
         {
+            "id": 12,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 13,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 14,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 15,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 16,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 17,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 18,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 19,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 20,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 21,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 22,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 23,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 24,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 25,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 26,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 27,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 28,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 29,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 30,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 31,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 32,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 33,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 34,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 35,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 36,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 37,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 38,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 39,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 40,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 41,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 42,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 43,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 44,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 45,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 46,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 47,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 48,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 49,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         },
         {
+            "id": 50,
             "title": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit  ipsum dolor sit amet consectetur.",
             "owner": "Maa-amet",
             "description": "Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.",
-            "likes": 9001
+            "likes": 9001,
+            "liked": false
         }
     ]
 }

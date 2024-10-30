@@ -1,7 +1,7 @@
 <div class="breadcrumbs">
     <img src=".././assets/breadcrumb-home-icon.svg"/>
     <div *ngFor="let title of pathTitle; let i = index; let last = last">
-        <a *ngIf="!last" href="/{{path[i]}}">{{title}}<span class="dash">/</span></a>
-        <p *ngIf="last">{{title}}</p>
+      <a *ngIf="!last" href="/{{path[i]}}">{{title}}<span class="dash">/</span></a>
+      <p *ngIf="last">{{title}}</p>
     </div>
-</div>
+  </div>

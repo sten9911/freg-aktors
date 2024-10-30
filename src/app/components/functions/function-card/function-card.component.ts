@@ -11,12 +11,13 @@ import { RouterModule } from '@angular/router';
 })
 export class FunctionCardComponent {
 
+  @Input() id = 0;
   @Input() title = '';
   @Input() description = '';
   @Input() owner = '';
   @Input() likes = 0;
+  @Input() liked = false;
 
-  liked: boolean = false;
   like()  {
     this.liked = !this.liked;
   }

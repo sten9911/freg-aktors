@@ -1,4 +1,4 @@
-<div class="function card">
+<div class="function card" *ngIf="function">
     <div class="info">
         <div class="left">
             <button><img src="./../assets/tag.svg"/>Kood</button>
@@ -8,9 +8,9 @@
             <button class="edit"><img src=".././assets/edit-btn.svg"/>Muuda</button>
             <button class="follow"><img src=".././assets/follow-btn.svg"/>Jälgi</button>
             <div class="likes">
-                <img *ngIf="!liked" (click)="like()" src=".././assets/like-black.svg"/>
-                <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
-                <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
+                <img *ngIf="!function.liked" (click)="like()" src=".././assets/like-black.svg"/>
+                <img *ngIf="function.liked" (click)="like()" src=".././assets/like-blue.svg"/>
+                <p class="likecount" [ngClass]="{'liked': function.liked}">{{function.likes}}</p>
             </div>
         </div>
     </div>
@@ -18,13 +18,13 @@
     <div class="body">
         <img src="./../assets/Maa-ameti_logo.svg"/>
         <div class="text">
-            <div class="title">Aadressiandmete süsteem</div>
+            <div class="title">{{function.title}}</div>
             <div class="owner">
-                <span class="owner-name">Maa-amet</span>
+                <span class="owner-name">{{function.owner}}</span>
                 <span>-</span>
                 <span class="date">20.10.2022</span>
                 <span class="private">(Privaatne)</span></div>
-            <div class="description">Aadressiandmete süsteemi eesmärk on tagada aadressiobjektide ühene identifitseerimine nii nende asukohas kui ka erinevates andmekogudes ning muuta võrreldavaks erineval ajal ja eri põhimõtetel esitatud koha-aadressid.</div>
+            <div class="description">{{function.description}}</div>
             <div class="tags">
                 <div>Märksõnad:</div>
                 <span>aadress</span>

@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="function-card" *ngFor="let function of functions | paginate: config">
-        <app-function-card class="function-card-item" [title]="function.title" [description]="function.description" [owner]="function.owner" [likes]="function.likes"></app-function-card>
+        <app-function-card class="function-card-item" [id]="function.id" [title]="function.title" [description]="function.description" [owner]="function.owner" [likes]="function.likes" [liked]="function.liked"></app-function-card>
     </div>
     <div class="sorting-bottom">
         <div class="result-count">

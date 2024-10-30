@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgClass, NgFor } from '@angular/common';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { FunctionsService } from '../../services/functions.service';
 
 @Component({
   selector: 'app-breadcrumbs',
@@ -12,20 +13,28 @@ import { Router, RouterModule } from '@angular/router';
 
 export class BreadcrumbsComponent implements OnInit {
   path: string[] = [];
-  pathTitle: string[] = [];
+  pathTitle: string[] = [''];
 
-  constructor(private router: Router) {}
+  constructor(private route: ActivatedRoute, private functionService: FunctionsService) { }
 
-  ngOnInit(): void {
-    this.path = this.router.url.split('/');
-    if (this.path[0] === '') this.path[0] = 'home'
-    this.pathTitle = this.path.map(path => this.getPathTitle(path));
-  }
-
-  getPathTitle(path: string) {
-    if (path === 'home') return 'Avaleht';    
-    if (path === 'functions') return 'Funktsioonide kataloog';
-    if (path === 'details') return 'Funktsiooni detailvaade';
-    return '-';
+  ngOnInit() {
+    this.route.url.subscribe(url => {
+      this.path = url.map(segment => segment.path);
+      this.path.unshift('home');
+      this.pathTitle = [];
+      
+      if (this.path.includes('functions')) {
+        this.pathTitle.push('Avaleht');
+        this.pathTitle.push('Funktsioonide kataloog');
+        const id = this.route.snapshot.paramMap.get('id');
+        if (id) {
+          this.functionService.getFunctionById(parseInt(id, 10)).subscribe((response) => {
+            if(response) {
+              this.pathTitle.push(response.title);
+            }
+          });
+        }
+      }
+    });
   }
 }

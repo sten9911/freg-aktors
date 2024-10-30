@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { FunctionsComponent } from './components/functions/functions.component';
 import { DetailsComponent } from './components/details/details.component';
+import { PageNotFoundComponent } from './components/misc/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     {
@@ -15,9 +16,10 @@ export const routes: Routes = [
       data: { breadcrumb: 'Funktsioonide kataloog' }
     },
     {
-      path: 'functions/details',
+      path: 'functions/details/:id',
       component: DetailsComponent,
       data: { breadcrumb: 'Funktsiooni detailvaade' }
     },
+    { path: '**', component: PageNotFoundComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full' }
   ];
