@@ -22,7 +22,7 @@
     }
 
     .card {
-        height: 200px;
+        min-height: 200px;
         background-color: #F0F0F2;
         border-radius: 8px;
         padding: 24px 24px 8px 24px;
@@ -63,6 +63,7 @@
                 .description {
                     font-size: 14px;
                     color: #131317;
+                    margin-bottom: 8px;
                 }
             }
         }
