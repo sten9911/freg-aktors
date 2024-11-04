@@ -1,11 +1,11 @@
 <div class="header-menu">
-    <div class="close item" (click)="closeMenu()">Sulge menüü<img src="../././assets/x-icon.svg"/></div>
-    <div class="lang item"><img src="../././assets/lang-icon.svg"/>In English</div>
-    <div class="nav item"><img src="../././assets/home-icon.svg"/><a href="/home">Avaleht</a></div>
+    <div class="close item" (click)="closeMenu()">Sulge menüü<span class="material-symbols-outlined">close</span></div>
+    <div class="lang item"><span class="material-symbols-outlined lang-icon">language</span><div class="lang-text">In English</div></div>
+    <div class="nav item"> <span class="material-symbols-outlined">house</span><a href="/home">Avaleht</a></div>
     <div class="nav item"><img src="../././assets/catalog-icon.svg"/><a href="/functions">Funktsioonide kataloog</a></div>
-    <div class="nav item"><img src="../././assets/help-icon.svg"/>Abikeskus</div>
+    <div class="nav item"><span class="material-symbols-outlined">support</span>Abikeskus</div>
     <div class="darkmode item">
-        <div><img src="../././assets/nightmode-icon.svg"/>Tume režiim</div>
+        <div class="v-flex v-align-items-center"><span class="material-symbols-outlined">dark_mode</span>Tume režiim</div>
         <app-toggle-button [(checked)]="darkmodeValue"></app-toggle-button>
     </div>
 </div>

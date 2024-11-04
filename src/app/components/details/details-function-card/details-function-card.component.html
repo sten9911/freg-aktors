@@ -1,12 +1,12 @@
-<div class="function card" *ngIf="function">
+<div class="function v-card v-mb-6" *ngIf="function">
     <div class="info">
         <div class="left">
-            <button><img src="./../assets/tag.svg"/>Kood</button>
-            <button><img src="./../assets/security.svg"/>Keskmine (K2T2S0)</button>
+            <button><span class="material-symbols-outlined v-mr-2">label</span>Kood</button>
+            <button><span class="material-symbols-outlined v-mr-2">security</span>Keskmine (K2T2S0)</button>
         </div>
         <div class="right">
-            <button class="edit"><img src=".././assets/edit-btn.svg"/>Muuda</button>
-            <button class="follow"><img src=".././assets/follow-btn.svg"/>Jälgi</button>
+            <button class="edit"><span class="material-symbols-outlined v-mr-3">edit</span>Muuda</button>
+            <button class="follow"><span class="material-symbols-outlined v-mr-3">visibility</span>Jälgi</button>
             <div class="likes">
                 <img *ngIf="!function.liked" (click)="like()" src=".././assets/like-black.svg"/>
                 <img *ngIf="function.liked" (click)="like()" src=".././assets/like-blue.svg"/>

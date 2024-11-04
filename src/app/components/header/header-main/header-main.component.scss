@@ -1,136 +1,28 @@
-.header-main {
-    height: 88px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
-
-    .logo {
-        cursor: pointer;
-        height: 32px;
-        margin-left: 24px;
-        margin-right: 24px;
+.logged-user {
+    white-space: nowrap;
+    p {
+        font-size: 14px;
+        margin-bottom: 4px;
     }
-
-    .searchbar {
-        width: 360px;
-    }
-
-    .header-buttons {
+    .user {
+        font-size: 16px;
+        color: #005AA3;
         display: flex;
         align-items: center;
-        .login-button {
-            margin-right: 24px;
-            color: white;
-            background-color: #005AA3;
-            border-radius: 360px;
-            border: none;
-            width: 152px;
-            height: 40px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .logged-user {
-            margin-right: 24px;
-            white-space: nowrap;
-            p {
-                font-size: 14px;
-                margin-bottom: 4px;
-            }
-            .user {
-                font-size: 16px;
-                color: #005AA3;
-                display: flex;
-                align-items: center;
-                svg {
-                    margin-left: 12px;
-                    cursor: pointer;
-                }
-            }
-        }
-        .header-buttons-sm {
-            display: flex;
-            align-items: center;
-            .header-btn {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 12px;
-                display: flex;
-                flex-direction: column;
-                color: #005AA3;
-                white-space: nowrap;
-                margin: 24px;
-                cursor: pointer;
-                img, svg {
-                    margin-bottom: 4px;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .header-buttons {
-        .login-button {
-            display: block;
-        }
-        .header-buttons-sm {
-            display: none !important;
-        }
-    }
-}
-@media only screen and (max-width: 992px) {
-    .header-buttons {
-        .login-button {
-            display: none;
-        }
-        .logged-user {
-            margin-right: 4px !important;
-            p {
-                font-size: 12px !important;
-            }
-            .user {
-                font-size: 14px !important;
-                svg {
-                    margin-left: 8px !important;
-                }
-            }
-        }
-        .header-buttons-sm {
-            display: flex;
-            .header-btn:first-child {
-                display: none !important;
-            }
-        }
-    }
-}
 @media only screen and (max-width: 600px) {
-    .header-main {
-        height: 72px;
-        .logo {
-            height: 24px;
-            margin-left: 12px;
-            margin-right: 12px;
+    .logo {
+        height: 24px;
+    }
+    .logged-user {
+        p {
+            font-size: 10px;
         }
-        .searchbar {
-            display: none;
-        }
-        .header-buttons {
-            .header-buttons-sm{
-                .header-btn:first-child {
-                    display: flex !important;
-                }
-                .header-btn {
-                    margin: 10px;
-                }
-            }
+        .user {
+            font-size: 12px;
         }
     }
+
 }

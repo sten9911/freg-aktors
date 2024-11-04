@@ -87,26 +87,21 @@
                     border-radius: 4px;
                     cursor: pointer;
                     margin-right: 8px;
-
-                    img {
-                        margin-right: 4px;
+                    span {
+                        font-size: 16px;
                     }
                 }
             }
 
             .details {
                 color:#005AA3;
-                font-size: 14px;
-                font-weight: bold;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
                 a, a:visited, a:hover, a:focus {
                     color:#005AA3;
                     text-decoration: none;
-                }
-                img {
-                    width: 30px;
+                    font-size: 14px;
                 }
             }
         }

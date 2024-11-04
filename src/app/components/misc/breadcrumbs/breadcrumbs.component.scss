@@ -1,34 +1,24 @@
 .breadcrumbs {
     color: #454854;
-    margin: 30px 0 30px 0;
-    display: flex;
+    font-size: 16px;
 
-    img {
-        margin-right: 8px;
+    span {
+        font-size: 20px !important;
+        color: #005AA3;
+    }
+    .dash {
+        color: #454854;
     }
 
     a {
         cursor: pointer;
-        font-size: 16px;
         color: #005AA3;
         text-decoration: underline;
         margin-right: 8px;
-
-        svg {
-            margin-right: 5px;
-            position: relative;
-            bottom: -2px;
-        }
     }
 
     a, a:visited, a:hover, a:focus {
         text-decoration: underline;
         color: #005AA3;
     }
-}
-.dash {
-    color: #454854;
-    text-decoration: none !important;
-    margin-left: 8px;
-    display: inline-block;
 }

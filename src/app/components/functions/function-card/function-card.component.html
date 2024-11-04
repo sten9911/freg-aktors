@@ -9,14 +9,14 @@
             <img src="./../assets/Maa-ameti_logo.svg"/>
             <div class="text">
                 <div class="title">{{title}}</div>
-                <div class="owner">{{owner}}</div>
+                <div class="owner" class="v-link">{{owner}}</div>
                 <div class="description">{{description}}</div>
             </div>     
         </div>
         <div class="info">
             <div class="left">
-                <button><img src="./../assets/tag.svg"/>Kood</button>
-                <button><img src="./../assets/security.svg"/>Keskmine (K2T2S0)</button>
+                <button><span class="material-symbols-outlined v-mr-2">label</span>Kood</button>
+                <button><span class="material-symbols-outlined v-mr-2">security</span>Keskmine (K2T2S0)</button>
             </div>
             <div class="right">
                 <div class="likes mobile">
@@ -24,7 +24,7 @@
                     <img *ngIf="liked" (click)="like()" src=".././assets/like-blue.svg"/>
                     <p class="likecount" [ngClass]="{'liked': liked}">{{likes}}</p>
                 </div>
-                <div class="details" [routerLink]="['/functions/details', id]"><a>Vaatan lähemalt</a><img src="./../assets/arrow-right-blue.svg"/></div>
+                <div class="details" [routerLink]="['/functions/details', id]"><a class="v-text-body-bold">Vaatan lähemalt</a><span class="material-symbols-outlined v-ml-3">arrow_forward</span></div>
             </div>
         </div>
     </div>

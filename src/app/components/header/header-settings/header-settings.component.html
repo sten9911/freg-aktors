@@ -1,7 +1,14 @@
-<div class="header-settings">
-    <a href="#" class="language-select">In English</a>
-    <div class="darkmode-settings">
-        <app-toggle-button [(checked)]="darkmodeValue"></app-toggle-button>
-        <div class="darkmode-select">Tume režiim</div>
+
+
+<div class="header-settings v-header__row v-header__row--with-grid v-header__row--top-bar">
+    <div class="v-header__grid-column v-hide-md-down v-gap-6">
+        <a class="v-link--sm" href="#">In English</a>
+    </div>
+    <div class="v-header__grid-column v-header__grid-column--end v-hide-md-down">
+        <div class="v-toggle v-toggle--sm">
+            <app-toggle-button [(checked)]="darkmodeValue"></app-toggle-button>
+            <div>Tume režiim</div>
+        </div>
     </div>
 </div>
+<div class="v-header__hr"></div>

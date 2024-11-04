@@ -34,24 +34,9 @@
         }
         button {
             margin-top: 20px;
-            width: 250px;
-            height: 40px;
-            background-color: transparent;
-            border: 3px solid #005AA3;
-            border-radius: 36px;
-            font-size: 16px;
-            color: #005AA3;
-            font-weight: bold;
-            cursor: pointer;
             a {
                 color: #005AA3;
                 text-decoration: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img {
-                    width: 30px;
-                }
             }
             
         }
@@ -88,8 +73,10 @@
                 padding: 0 10px 0 20px;
                 cursor: pointer;
 
-                img {
-                    width: 30px;
+                a {
+                    text-decoration: none;
+                    color: #131317;
+                    font-weight: bold;
                 }
             }
         }

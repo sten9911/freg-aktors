@@ -1,14 +1,4 @@
-.card {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 16px 32px 32px 32px;
-    margin-bottom: 32px;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-}
-
 .faq {
-    padding: 32px;
-
     h1 {
         font-weight: normal;
         font-size: 20px;
@@ -21,9 +11,8 @@
 }
 
 @media only screen and (max-width: 760px) {
-    .card {
+    .faq {
         padding: 12px 0px 12px 0px;
-        margin-bottom: 16px;
         box-shadow: unset;
     }
 }

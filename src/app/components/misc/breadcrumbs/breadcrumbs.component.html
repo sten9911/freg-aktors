@@ -1,7 +1,8 @@
-<div class="breadcrumbs">
-    <img src=".././assets/breadcrumb-home-icon.svg"/>
+<div class="breadcrumbs v-flex v-align-items-center v-my-8">
+    <span class="material-symbols-outlined v-mr-3 home-icon">house</span>
     <div *ngFor="let title of pathTitle; let i = index; let last = last">
-      <a *ngIf="!last" href="/{{path[i]}}">{{title}}<span class="dash">/</span></a>
-      <p *ngIf="last">{{title}}</p>
+      <a *ngIf="!last" href="/{{path[i]}}">{{title}}</a>
+      <span *ngIf="!last" class="v-mx-4 v-inline-flex dash">/</span>
+      <p *ngIf="last" class="v-inline-flex">{{title}}</p>
     </div>
   </div>

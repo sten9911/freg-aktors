@@ -26,19 +26,22 @@
             color: #fff;
             text-decoration: none;
         }
-        img {
+        img, span {
+            font-size: 16px;
             margin-right: 16px;
         }
     }
     .close {
         justify-content: flex-end;
-        img {
+        span {
             margin-left: 16px;
             margin-right: 0px;
         }
     }
     .lang {
-        text-decoration: underline;
+        .lang-text {
+            text-decoration: underline;
+        }
     }
     .darkmode {
         cursor: default;

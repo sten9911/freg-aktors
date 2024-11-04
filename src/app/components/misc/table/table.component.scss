@@ -9,7 +9,9 @@
             white-space: nowrap;
             border-top: 1px solid #C0C2C9;
             .header {
-                display: flex;
+                span {
+                    font-size: 18px;
+                }
             }
         }
     }

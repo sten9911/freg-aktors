@@ -1,25 +1,5 @@
 .header-settings {
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
-    border-bottom: 1px solid #D8D9DF;
-
-    .language-select {
-        margin-left: 24px;
-        color: #005AA3;
-    }
-    .darkmode-settings {
-        display: flex;
-        align-items: center;
-        color: #454854;
-        .darkmode-select {
-            margin-right: 24px; 
-        }
-    }
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 600px) {
