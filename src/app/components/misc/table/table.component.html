@@ -1,31 +1,48 @@
-<div class="table-wrapper">
-    <table class="horizontal" *ngIf="!vertical" cellpadding="0" cellspacing="0">
-        <tr class="headers">
-            <th *ngFor="let header of headers" [ngClass]="header.sortable ? 'sortable' : ''">
-                <div class="header v-flex v-align-items-center">
-                    <div class="v-mr-4">{{header.name}}</div>
-                    <span *ngIf="header.sortable" [ngClass]="header.alwaysSortable ? 'always-display material-symbols-outlined' : 'desktop-display material-symbols-outlined'">expand_all</span>
-                </div>
-            </th>
-        </tr>
-        <tr *ngFor="let row of data">
-            <td *ngFor="let cell of row; let i = index" [ngClass]="{'name-column': headers[i].name === 'Nimetus'}">
-                <div *ngIf="cell.startsWith('img:'); else textCell">
-                    <img [src]="cell.substring(4)" alt="Image" />
-                </div>
-                <ng-template #textCell>
-                    <div>{{cell}}</div>
-                </ng-template>
-            </td>
-        </tr>
-    </table>
+<div class="v-table-wrapper" *ngIf="!vertical">
+    <div class="v-table-scroll">
+        <table class="v-table">
+            <thead>
+                <tr>
+                    <th scope="col" *ngFor="let header of headers" [ngClass]="header.sortable ? 'sortable' : ''">
+                        <div class="header v-flex v-align-items-center">
+                            <div class="v-mr-4">{{header.name}}</div>
+                            <span *ngIf="header.sortable" [ngClass]="header.alwaysSortable ? 'always-display material-symbols-outlined' : 'desktop-display material-symbols-outlined'">expand_all</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of data">
+                    <td *ngFor="let cell of row | keyvalue; let i = index" [ngClass]="{'name-column': headers[i].name === 'Nimetus'}">
+                        <div *ngIf="cell.value.toString().startsWith('img:'); else textCell">
+                            <img [src]="cell.value.toString().substring(4)" alt="Image" />
+                        </div>
+                        <ng-template #textCell>
+                            <div>{{cell.value}}</div>
+                        </ng-template>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="v-pagination" *ngIf="!vertical">
+        <span class="v-text-body-sm v-color-text-secondary">2 tulemust</span>
+        
+        <label class="v-pagination__items-limit">Kuva korraga<div class="v-select">
+        <button class="v-form-control v-form-control--sm" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="0.757280621209999" aria-owns="0.757280621209999">
+            <span class="v-select__text">10</span>
+            <span class="material-icons v-select__icon" aria-hidden="true">arrow_drop_down</span>
+        </button>
+        </div>
+    </label>
+    </div>
+</div>
 
-    <table class="vertical" *ngIf="vertical" cellpadding="0" cellspacing="0">
+<div *ngIf="vertical" class="v-flex v-flex-column v-gap-6 v-mb-6">
+    <table class="v-mobile-table">
         <tr *ngFor="let header of headers; let i = index">
-            <th>{{header.name}}</th>
-            <ng-container *ngFor="let row of data; let j = index" >
-                <td [ngClass]="{'name-column': headers[i].name === 'Nimetus'}">{{data[j][i]}}</td>
-            </ng-container>
+            <th scope="row">{{header.name}}</th>
+            <td>{{data[i]}}</td>
         </tr>
     </table>
 </div>

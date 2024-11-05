@@ -8,13 +8,13 @@
             <p>Tagasi</p>
         </a>
         <div class="detail_view">
-            <app-details-function-card [function]="functionData"></app-details-function-card>
+            <app-details-function-card [function]="functionData" [tags]="detailsData?.tags"></app-details-function-card>
             <div class="intro-contact">
-                <app-details-intro-technical class="intro"></app-details-intro-technical>
-                <app-details-contacts class="contact"></app-details-contacts>
+                <app-details-intro-technical class="intro" [longDescription]="detailsData?.longDescription" [technicalData]="technicalDataArray"></app-details-intro-technical>
+                <app-details-contacts [links]="detailsData?.importantLinks" class="contact"></app-details-contacts>
             </div>
-            <app-details-faq></app-details-faq>
-            <app-details-usecases></app-details-usecases>
+            <app-details-faq [faq]="detailsData?.faq"></app-details-faq>
+            <app-details-usecases [usecasesData]="useCaseDataArray"></app-details-usecases>
         </div>
         <a class="back" href="/functions">
             <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">

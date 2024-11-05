@@ -1,11 +1,51 @@
 <div class="search-filters">
     <app-search-bar [iconColor]="'black'" class="searchbar"></app-search-bar>
-    <app-dropdown class="dropdown-filter" title="Liigitus"><p>liigitus</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Pakutav teenus"><p>Pakutav teenus</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Valdkondlik märksõna"><p>Valdkondlik märksõna</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Omanik"><p>Omanik</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Programmeerimiskeel"><p>Programmeerimiskeel</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Operatsioonisüsteem"><p>Operatsioonisüsteem</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="Turvameetmeid rakendatakse"><p>Turvameetmeid rakendatakse</p></app-dropdown>
-    <app-dropdown class="dropdown-filter" title="ISKE turbetase"><p>ISKE turbetase</p></app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Liigitus">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" checked="" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Liigitus 1</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" checked="" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Liigitus 2</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Pakutav teenus">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Pakutav teenus 1</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Valdkondlik märksõna">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Märksõna 1</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Omanik">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Omanik 1</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Omanik 2</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Programmeerimiskeel">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Java</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">JS</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Operatsioonisüsteem">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Windows</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Linux</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">MacOS</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="Turvameetmeid rakendatakse">
+        <div class="v-flex v-flex-column">
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Jah</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Ei</label></div>
+        </div>
+    </app-dropdown>
+    <app-dropdown class="dropdown-filter" title="ISKE turbetase">
+            <div class="v-flex v-flex-column">   
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" checked="" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Madal</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" checked="" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Keskmine</label></div>
+            <div class="v-checkbox v-checkbox--sm"><input type="checkbox" checked="" class="v-checkbox v-checkbox--md" id="v-checkbox-label-0.41861838941318075"><label for="v-checkbox-label-0.41861838941318075">Kõrge</label></div>
+        </div>
+    </app-dropdown>
 </div>

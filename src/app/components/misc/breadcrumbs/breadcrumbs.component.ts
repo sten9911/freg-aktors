@@ -28,9 +28,9 @@ export class BreadcrumbsComponent implements OnInit {
         this.pathTitle.push('Funktsioonide kataloog');
         const id = this.route.snapshot.paramMap.get('id');
         if (id) {
-          this.functionService.getFunctionById(parseInt(id, 10)).subscribe((response) => {
+          this.functionService.getFunctionById(parseInt(id)).subscribe((response) => {
             if(response) {
-              this.pathTitle.push(response.title);
+              this.pathTitle.push(response.function.title);
             }
           });
         }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TableComponent } from '../../misc/table/table.component';
 import { NgxPaginationModule, PaginationInstance } from 'ngx-pagination';
 import { NgFor, NgIf } from '@angular/common';
@@ -11,6 +11,8 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './details-usecases.component.scss'
 })
 export class DetailsUsecasesComponent {
+    @Input() usecasesData: any[][] | undefined;
+
     public config: PaginationInstance = {
       id: "custom",
       itemsPerPage: 2,

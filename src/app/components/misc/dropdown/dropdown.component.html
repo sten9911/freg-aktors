@@ -1,6 +1,13 @@
-<div class="dropdown">
-    <div class="title" (click)="toggle()">{{title}}<span class="material-symbols-outlined">keyboard_arrow_down</span></div>
-    <div class="content" *ngIf="contentOpen">
-        <ng-content></ng-content>
+<div (click)="toggle()" class="v-accordion v-accordion--sm" [ngClass]="{'v-accordion--expanded': contentOpen}">
+    <button class="v-accordion__header" id="accordion-header" aria-expanded="false" aria-controls="accordion-content">
+        <h4 class="v-accordion__title">{{title}}</h4>
+        <span class="material-icons v-accordion__expand-icon" aria-hidden="true">expand_more</span>
+    </button>
+    <div class="v-accordion__collapse" role="region" id="accordion-content" aria-labelledby="accordion-header">
+        <div class="v-accordion__content">
+            <div style="height: 200px; border: 1px dashed lightgray; border-radius: 4px;">
+                <ng-content></ng-content>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,24 +1,14 @@
-<div class="contact v-card">
+<div class="contact v-card v-mb-6" *ngIf="links">
     <div class="links">
         <p class="title">OLULISED LINGID</p>
-        <a>Integreeritav aadressiotsing In-ADS<img src=".././assets/link-icon.svg"/></a>
-        <a>ADS-st RIHAs<img src=".././assets/link-icon.svg"/></a>
-        <a>Gitbooks<img src=".././assets/link-icon.svg"/></a>
+        <a class="v-link v-link--with-icon" *ngFor="let link of links.links" href="{{link.url}}">{{link.title}}<span class="material-icons v-ml-3" aria-label="Avaneb uuel vahelehel">open_in_new</span></a>
     </div>
     <div class="contacts-notify">
         <div class="contacts">
             <p class="title">KONTAKT</p>
-            <div class="contact-info">
-                <p><b>Mari Murakas</b></p>
-                <p>mari.murakas{{'@'}}info.ee, +372 50987545</p>
-            </div>
-            <div class="contact-info">
-                <p><b>Mart Murakas</b></p>
-                <p>mart.murakas{{'@'}}info.ee</p>
-            </div>
-            <div class="contact-info">
-                <p><b>Üldkontakt (Maa-amet IT)</b></p>
-                <p>info{{'@'}}info.ee</p>
+            <div class="contact-info" *ngFor="let contact of links.contacts">
+                <p><b>{{contact.name}}</b></p>
+                <p>{{contact.email}}<span *ngIf="contact.phoneNr">,</span> {{contact.phoneNr}}</p>
             </div>
         </div>
         <div class="notify">

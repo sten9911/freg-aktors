@@ -1,10 +1,10 @@
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgClass],
   templateUrl: './dropdown.component.html',
   styleUrl: './dropdown.component.scss'
 })

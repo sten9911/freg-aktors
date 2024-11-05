@@ -6,7 +6,7 @@ import { DetailsFaqComponent } from './details-faq/details-faq.component';
 import { DetailsUsecasesComponent } from './details-usecases/details-usecases.component';
 import { BreadcrumbsComponent } from '../misc/breadcrumbs/breadcrumbs.component';
 import { FunctionsService } from '../services/functions.service';
-import { Function } from '../functions/function.model';
+import { Function, FunctionDetails } from '../functions/function.model';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -18,6 +18,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsComponent {
   functionData: Function | undefined;
+  detailsData: FunctionDetails | undefined;
+  technicalDataArray: any[][] | undefined;
+  useCaseDataArray: any[][] | undefined;
 
   constructor(private route: ActivatedRoute, private functionService: FunctionsService) { }
 
@@ -26,7 +29,12 @@ export class DetailsComponent {
     if (id) {
       const idNumber = parseInt(id, 10);
       this.functionService.getFunctionById(idNumber).subscribe((response) => {
-        this.functionData = response;
+        this.functionData = response?.function;
+        this.detailsData = response?.functionDetails;
+        this.technicalDataArray = response?.functionDetails.technicalData.map((obj) => Object.values(obj));
+        this.useCaseDataArray = response?.functionDetails.useCaseData.map((obj) => Object.values(obj));
+        console.log(response);
+        
       });
     } else {
       console.error('No ID found in URL');

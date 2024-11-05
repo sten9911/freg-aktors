@@ -1,11 +1,11 @@
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Function } from '../../functions/function.model';
 
 @Component({
   selector: 'app-details-function-card',
   standalone: true,
-  imports: [NgClass, NgIf],
+  imports: [NgClass, NgIf, NgFor],
   templateUrl: './details-function-card.component.html',
   styleUrl: './details-function-card.component.scss'
 })
@@ -14,6 +14,7 @@ export class DetailsFunctionCardComponent {
   liked: boolean = false;
 
   @Input() function: Function | undefined = undefined;
+  @Input() tags: string[] | undefined = [];
 
   like()  {
     if (this.function) {

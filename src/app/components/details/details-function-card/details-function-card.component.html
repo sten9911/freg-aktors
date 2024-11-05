@@ -27,10 +27,7 @@
             <div class="description">{{function.description}}</div>
             <div class="tags">
                 <div>Märksõnad:</div>
-                <span>aadress</span>
-                <span>teenus</span>
-                <span>andmed</span>
-                <span>komponent</span>
+                <span *ngFor="let tag of tags">{{tag}}</span>
             </div>
         </div>     
     </div>

@@ -3,62 +3,10 @@
         <div class="select-header desc" [ngClass]="{'active': selectedTab === 'desc'}" (click)="selectedTab = 'desc'">Täpne tutvustus</div>
         <div class="select-header tech" [ngClass]="{'active': selectedTab === 'tech'}" (click)="selectedTab = 'tech'">Tehnilised andmed</div>
     </div>
-    <div class="tab-content">
-        <div class="introduction" *ngIf="selectedTab === 'desc'">
-            <span>In-ADS-i veebiteenuse näol on tegemist aadressiandmete süsteemi (ADS-i) andmeid kasutava integreeritava aadressiotsinguga, mida on võimalik lihtsalt paigutada erinevatesse veebipõhistesse infosüsteemidesse. <b>In-ADS-is on alati kõige täpsemad ja ajakohasemad aadressid</b>, sest tänu igaöistele uuendamistele jõuavad sinna kõik aadressiandmete süsteemis tehtud muudatused.</span>
-            <span>In-ADS on kiire ja mugav. In-ADS-i kaudu saavad kõik huvilised tasuta kätte korrektsed Eesti aadressid koos võimalusega salvestada need oma infosüsteemi. Teenus sobib kõigile asutustele, kes ootavad oma veebirakenduste kasutajatelt aadressi sisestamist. In-ADS-i kaudu on see tehtud tarbijale mugavaks (aadresse pakutakse juba sisestamise käigus) ja rakendusele edastatakse info valitud aadressi kohta süsteemselt töödeldaval kujul.
-                Võimalik on kasutada ka objektipõhist otsingut. <br> In-ADS sisaldab ka kaardikomponenti, kus aadressi ja objekti otsing võib olla nii teksti- kui ka kaardipõhine. Lisaks saab luua ka ilma otsinguta staatilist kaarti, näiteks asutuse asukoha kuvamiseks.</span>
-            <span>Aadressi andmeid on võimalik pärida ka ilma integreeritava kasutajaliideseta, kasutades <a>Gazetteer-teenuse URL päringut</a>, mis tagastab tulemused JSON või XML kujul.</span>
-        </div>
+    <div class="tab-content" *ngIf="technicalData && longDescription">
+        <div class="introduction" *ngIf="selectedTab === 'desc'" [innerHTML]="longDescription"></div>
         <div class="technical-data" *ngIf="selectedTab === 'tech'">
-            <table cellpadding="0" cellspacing="0">
-                <tr>
-                    <th>Kategooria</th>
-                    <td>Kood</td>
-                </tr>
-                <tr>
-                    <th>Pakutav teenus</th>
-                    <td>Andmeteenus</td>
-                </tr>
-                <tr>
-                    <th>Tehnoloogia</th>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>Programmeerimiskeel</th>
-                    <td>.Net, java</td>
-                </tr>
-                <tr>
-                    <th>Operatsioonisüsteem</th>
-                    <td>Windows, Mac OS, Linux</td>
-                </tr>
-            </table>
-            <table cellpadding="0" cellspacing="0">
-                <tr>
-                    <th>Rakendatud turvastandardid</th>
-                    <td>ISKE</td>
-                </tr>
-                <tr>
-                    <th>ISKE turvaosaklassid</th>
-                    <td>Keskmine</td>
-                </tr>
-                <tr>
-                    <th>Käideldavuse tase</th>
-                    <td>K2</td>
-                </tr>
-                <tr>
-                    <th>Tervikluse tase</th>
-                    <td>T2</td>
-                </tr>
-                <tr>
-                    <th>Konfidentsiaalsuse tase</th>
-                    <td>S0</td>
-                </tr>
-                <tr>
-                    <th>Viimase auditi kuupäev</th>
-                    <td>0.12.2021</td>
-                </tr>
-            </table>
+            <app-table *ngFor="let table of technicalData; let i = index" [vertical]="true" [headers]="technicalDataHeaders[i]" [data]="technicalData[i]"></app-table>
         </div>
     </div>
 </div>

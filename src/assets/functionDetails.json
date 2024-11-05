@@ -1,0 +1,43 @@
+{
+    "longDescription": "<span>In-ADS-i veebiteenuse näol on tegemist aadressiandmete süsteemi (ADS-i) andmeid kasutava integreeritava aadressiotsinguga, mida on võimalik lihtsalt paigutada erinevatesse veebipõhistesse infosüsteemidesse. <b>In-ADS-is on alati kõige täpsemad ja ajakohasemad aadressid</b>, sest tänu igaöistele uuendamistele jõuavad sinna kõik aadressiandmete süsteemis tehtud muudatused.</span><span>In-ADS on kiire ja mugav. In-ADS-i kaudu saavad kõik huvilised tasuta kätte korrektsed Eesti aadressid koos võimalusega salvestada need oma infosüsteemi. Teenus sobib kõigile asutustele, kes ootavad oma veebirakenduste kasutajatelt aadressi sisestamist. In-ADS-i kaudu on see tehtud tarbijale mugavaks (aadresse pakutakse juba sisestamise käigus) ja rakendusele edastatakse info valitud aadressi kohta süsteemselt töödeldaval kujul. Võimalik on kasutada ka objektipõhist otsingut. <br> In-ADS sisaldab ka kaardikomponenti, kus aadressi ja objekti otsing võib olla nii teksti- kui ka kaardipõhine. Lisaks saab luua ka ilma otsinguta staatilist kaarti, näiteks asutuse asukoha kuvamiseks.</span><span>Aadressi andmeid on võimalik pärida ka ilma integreeritava kasutajaliideseta, kasutades <a>Gazetteer-teenuse URL päringut</a>, mis tagastab tulemused JSON või XML kujul.</span>",
+    "technicalData": [
+        {
+            "category": "Kood", 
+            "service": "Andmeteenus", 
+            "technology": "-", 
+            "programmingLanguage": 
+            ".Net, java", 
+            "operationSystem": "Windows, Mac OS, Linux"
+        }, 
+        {
+            "securityStandard": "ISKE", 
+            "securityClass": "Keskmine", 
+            "availabilityLevel": "K2", 
+            "integrityLevel": "T2", 
+            "confidentialityLevel": "S0", 
+            "lastAudit": "1.12.2021"
+        }
+    ],
+    "importantLinks": {
+        "links": [
+            {"title": "Integreeritav aadressiotsing In-ADS", "url": "/home"},
+            {"title": "ADS-st RIHAs", "url": "/home"},
+            {"title": "Gitbooks", "url": "/home"}
+        ],
+        "contacts": [
+            {"name": "Mari Murakas", "email": "mari.murakas@info.ee", "phoneNr": "+372 50987545"},
+            {"name": "Mart Murakas", "email": "mart.murakas@info.ee"},
+            {"name": "Üldkontakt (Maa-amet IT)", "email": "info@info.ee"}
+        ]
+    },
+    "faq": [
+        {"question": "Kuidas koodi kasutada?", "answer": "Koodi kasutamiseks käita kood ja vajadusel muuda selle sisu."},
+        {"question": "Näidis küsimus?", "answer": "Näidis vastus."},
+        {"question": "Ehk veel mõni pikem küsimus siia alla näiteks?", "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptates cum? Voluptatum tempore corporis aut similique velit quod veritatis porro! Suscipit possimus nesciunt iste, saepe veniam praesentium ex rem non!"}
+    ],
+    "useCaseData": [
+        {"img": "img:.././assets/users-table-pic.svg", "name": "IN-ADS aadressiandmed ehitusregistris", "projectName": "Ehitusregister", "startedUsing": "05.09.2022", "usedBy": "MKM"}, 
+        {"img": "img:.././assets/users-table-pic.svg", "name": "Lorem ipsum dolor sit amet consectetur ipsum dolor sit ipsum dolor sit amet consectetur.", "projectName": "Lorem ipsum dolor", "startedUsing": "23.09.2021", "usedBy": "RIA"}
+    ],
+    "tags": ["aadress", "teenus", "andmed", "komponent"]
+}

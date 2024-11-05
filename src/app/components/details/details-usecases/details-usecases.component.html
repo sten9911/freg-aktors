@@ -3,21 +3,11 @@
         <h1>Kasutusjuhud</h1>
         <div class="add_usecase"><span class="material-symbols-outlined v-mr-3">add</span>Lisan uue kasutusjuhu</div>
     </div>
-    <div class="usecase-table-desktop">
-        <app-table [vertical]="false" [headers]="usecaseHeaders" [data]="usecaseData"></app-table>
-        <div class="table-results desktop-table">
-            <p>2 tulemust</p>
-            <div class="page-size">
-                <p>Kuvan korraga</p>
-                <div class="size-dropdown">
-                    <div class="dropdown-text">10</div>
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
-                </div>
-            </div>
-        </div>
+    <div class="usecase-table-desktop" *ngIf="usecasesData">
+        <app-table [vertical]="false" [headers]="usecaseHeaders" [data]="usecasesData"></app-table>
     </div>
-    <div class="usecase-table-mobile">
-        <app-table *ngFor="let table of usecaseData | paginate: config" [vertical]="true" [headers]="usecaseHeaders.slice(1,5)" [data]="[table.slice(1,5)]"></app-table>
+    <div class="usecase-table-mobile" *ngIf="usecasesData">
+        <app-table *ngFor="let table of usecaseData | paginate: config; index as i" [vertical]="true" [headers]="usecaseHeaders.slice(1,5)" [data]="usecasesData[i].slice(1, 5)"></app-table>
         
         <div class="sorting-bottom">
             <div class="result-count">
