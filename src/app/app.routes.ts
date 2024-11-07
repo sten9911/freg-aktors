@@ -20,6 +20,6 @@ export const routes: Routes = [
       component: DetailsComponent,
       data: { breadcrumb: 'Funktsiooni detailvaade' }
     },
-    { path: '**', component: PageNotFoundComponent},
-    { path: '', redirectTo: '/home', pathMatch: 'full' }
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: PageNotFoundComponent}
   ];

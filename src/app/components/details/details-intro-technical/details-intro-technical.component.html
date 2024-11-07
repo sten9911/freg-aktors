@@ -1,12 +1,20 @@
-<div class="intro v-card v-mb-6">
-    <div class="tab-select">
-        <div class="select-header desc" [ngClass]="{'active': selectedTab === 'desc'}" (click)="selectedTab = 'desc'">Täpne tutvustus</div>
-        <div class="select-header tech" [ngClass]="{'active': selectedTab === 'tech'}" (click)="selectedTab = 'tech'">Tehnilised andmed</div>
-    </div>
-    <div class="tab-content" *ngIf="technicalData && longDescription">
-        <div class="introduction" *ngIf="selectedTab === 'desc'" [innerHTML]="longDescription"></div>
-        <div class="technical-data" *ngIf="selectedTab === 'tech'">
-            <app-table *ngFor="let table of technicalData; let i = index" [vertical]="true" [headers]="technicalDataHeaders[i]" [data]="technicalData[i]"></app-table>
+<div class="v-card v-mb-6">
+    <div class="v-tabs">
+        <div style="position: relative;">
+            <div class="v-tabs__tab-list" role="tablist">
+                <button (click)="selectedTab = 'desc'" class="v-tabs__tab" [ngClass]="{'v-tabs__tab--selected': selectedTab === 'desc'}" id="tab-0" role="tab" [attr.aria-selected]="selectedTab === 'desc'">Täpne tutvustus</button>
+                <button (click)="selectedTab = 'tech'" class="v-tabs__tab" [ngClass]="{'v-tabs__tab--selected': selectedTab === 'tech'}" id="tab-1" role="tab" [attr.aria-selected]="selectedTab === 'tech'">Tehnilised andmed</button>
+            </div>
+        </div>
+        <div class="v-tabs__content" role="tabpanel" aria-labelledby="tab-0">
+            <div>
+                <div class="tab-content v-p-5" *ngIf="technicalData && longDescription">
+                    <div class="introduction" *ngIf="selectedTab === 'desc'" [innerHTML]="longDescription"></div>
+                    <div class="technical-data" *ngIf="selectedTab === 'tech'">
+                        <app-table *ngFor="let table of technicalData; let i = index" [vertical]="true" [headers]="technicalDataHeaders[i]" [data]="technicalData[i]"></app-table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

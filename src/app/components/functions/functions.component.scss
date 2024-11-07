@@ -42,25 +42,8 @@
             .header-buttons {
                 display: flex;
                 justify-content: space-between;
-                .add_function, .filter_function {
-                    font-size: 14px;
-                    color: #005AA3;
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 3px solid #005AA3;
-                    padding: 8px 20px 8px 20px;
-                    border-radius: 36px;
-                    cursor: pointer;
-                    img {
-                        margin-right: 4px;
-                    }
-                }
                 .filter_function {
                     display: none;
-                    background-color: #005AA3;
-                    color: #fff;
                 } 
             }
             
@@ -127,5 +110,14 @@
     }
     .title {
         margin-bottom: 24px;
+    }
+    .desktop-breadcrumbs {
+        display: none;
+    }
+    .header-buttons {
+        button {
+            padding: 4px 12px;
+        }
+        
     }
 }

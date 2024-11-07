@@ -5,8 +5,8 @@
             <button><span class="material-symbols-outlined v-mr-2">security</span>Keskmine (K2T2S0)</button>
         </div>
         <div class="right">
-            <button class="edit"><span class="material-symbols-outlined v-mr-3">edit</span>Muuda</button>
-            <button class="follow"><span class="material-symbols-outlined v-mr-3">visibility</span>Jälgi</button>
+            <button type="button" class="v-button v-button--secondary v-button--sm v-mr-5"><a class="v-text-body-bold v-flex"><span class="material-symbols-outlined v-mr-3">edit</span>Muuda</a></button>
+            <button type="button" class="v-button v-button--primary v-button--sm v-mr-5"><span class="material-symbols-outlined v-mr-3">visibility</span>Jälgi</button>
             <div class="likes">
                 <img *ngIf="!function.liked" (click)="like()" src=".././assets/like-black.svg"/>
                 <img *ngIf="function.liked" (click)="like()" src=".././assets/like-blue.svg"/>
