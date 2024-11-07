@@ -18,7 +18,7 @@ Igal vaatel on implementeeritud **arvuti** ekraanivaade, **tahvli** ekraanivaade
 
 2. **Ehita Docker Compose abil:**
     ```
-    docker-compose up --build
+    docker-compose -p aktors up --build
     ```
 
 3. Ava veebibrauseris `http://localhost:4200`
